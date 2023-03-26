@@ -1,59 +1,48 @@
 {
-  "name": "trivia-app-1",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@tanstack/react-query": "^4.28.0",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "@types/axios": "^0.14.0",
-    "@types/jest": "^24.0.0",
-    "@types/node": "^12.0.0",
-    "@types/react": "^16.9.19",
-    "@types/react-dom": "^16.9.5",
-    "@types/styled-components": "^4.4.2",
-    "@xstate/react": "^3.2.1",
-    "axios": "^1.3.4",
-    "effector": "^22.7.0",
-    "effector-react": "^22.5.1",
-    "phaser": "3.55.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "3.3.0",
-    "styled-components": "^5.0.0",
-    "typescript": "~3.7.2",
-    "xstate": "^4.37.1"
-  },
+  "name": "react-typescript-starter",
+  "description": "Minimalist React 18 starter template with TypeScript ⚛",
+  "version": "1.0.0",
+  "main": "src/index.tsx",
+  "repository": "https://github.com/GR34SE/react-typescript-starter.git",
+  "license": "MIT",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "dev": "webpack-cli serve --mode=development --env development --open --hot",
+    "build": "webpack --mode=production --env production --progress",
+    "lint": "eslint './src/**/*.{ts,tsx,js,jsx}'",
+    "lint:fix": "eslint './src/**/*.{ts,tsx,js,jsx}' --fix"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.17.0",
-    "@typescript-eslint/parser": "^2.17.0",
-    "eslint": "^6.8.0",
-    "prettier": "^1.19.1",
-    "stylelint": "^13.0.0",
-    "stylelint-config-recommended": "^3.0.0",
-    "stylelint-config-styled-components": "^0.1.1",
-    "stylelint-processor-styled-components": "^1.9.0"
+    "@types/node": "16.18.21",
+    "@types/react": "18.0.29",
+    "@types/react-dom": "18.0.11",
+    "@types/webpack": "5.28.0",
+    "@types/webpack-dev-server": "4.7.1",
+    "@typescript-eslint/eslint-plugin": "5.56.0",
+    "@typescript-eslint/parser": "5.56.0",
+    "eslint": "8.36.0",
+    "eslint-config-prettier": "8.8.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-react": "7.32.2",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-webpack-plugin": "3.2.0",
+    "fork-ts-checker-webpack-plugin": "7.3.0",
+    "html-webpack-plugin": "5.5.0",
+    "prettier": "2.8.7",
+    "ts-loader": "9.4.2",
+    "ts-node": "10.9.1",
+    "tsconfig-paths-webpack-plugin": "3.5.2",
+    "typescript": "4.9.5",
+    "webpack": "5.76.3",
+    "webpack-cli": "4.10.0",
+    "webpack-dev-server": "4.13.1"
+  },
+  "dependencies": {
+    "@types/styled-components": "^5.1.26",
+    "axios": "^1.3.4",
+    "phaser": "^3.55.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "styled-components": "^5.3.9"
   }
 }

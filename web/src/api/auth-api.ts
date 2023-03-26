@@ -1,6 +1,10 @@
-import { ApiClient } from './client/api-client';
+import {ApiClient} from "./client/api-client";
 
-const client = new ApiClient('auth');
+const client = new ApiClient("auth");
 
-export const AuthApi = {
-};
+export interface JwtPayload {
+    token: string;
+    refreshToken: string;
+}
+
+export default {};
