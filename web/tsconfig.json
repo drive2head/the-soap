@@ -19,9 +19,9 @@
     "moduleResolution": "node",
     "downlevelIteration": true,
     "paths": {
-      "components/*": [
-        "src/components/*"
-      ]
+      "@/*": [
+        "src/*"
+      ],
     }
   },
   "include": [
