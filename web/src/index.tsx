@@ -1,6 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 
-import App from 'containers/App';
+import {ThemeProvider} from "styled-components";
+// import {HomePage} from "@/pages/HomePage";
+import {GamePage} from "@/pages/GamePage";
+import {theme} from "@/styles/theme";
+import GlobalStyles from "@/styles/GlobalStyles";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+    <React.StrictMode>
+        <ThemeProvider theme={theme}>
+            <>
+                <GlobalStyles />
+                <GamePage />
+            </>
+        </ThemeProvider>
+    </React.StrictMode>,
+    document.getElementById("root")
+);
