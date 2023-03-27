@@ -3,7 +3,7 @@ import {Heading} from "@/components/Heading";
 import {MenuScreen} from "@/components/MenuScreen";
 import {Button} from "@/components/common/Button";
 
-export const HomeScreen: React.FC = () => {
+export const HomePage: React.FC = () => {
     const onStartButtonClick = () => {
         console.log("start");
     };

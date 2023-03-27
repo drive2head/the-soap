@@ -2,7 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import {ThemeProvider} from "styled-components";
-import {HomeScreen} from "@/pages/HomePage";
+// import {HomePage} from "@/pages/HomePage";
+import {GamePage} from "@/pages/GamePage";
 import {theme} from "@/styles/theme";
 import GlobalStyles from "@/styles/GlobalStyles";
 
@@ -11,7 +12,7 @@ ReactDOM.render(
         <ThemeProvider theme={theme}>
             <>
                 <GlobalStyles />
-                <HomeScreen />
+                <GamePage />
             </>
         </ThemeProvider>
     </React.StrictMode>,

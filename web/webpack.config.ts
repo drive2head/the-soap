@@ -25,6 +25,13 @@ const webpackConfig = (env): Configuration => ({
                     transpileOnly: true
                 },
                 exclude: /dist/
+            },
+            {
+                test: /\.(png|jpe?g|gif|jp2|webp)$/,
+                loader: "file-loader",
+                options: {
+                    name: "assets/[name].[ext]"
+                }
             }
         ]
     },
